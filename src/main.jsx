@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import 'virtual:windi.css'  // ✅ seulement si le plugin Vite WindiCSS est actif
 import App from './App.jsx'
-import './index.css'
+import 'leaflet/dist/leaflet.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
